@@ -1,4 +1,4 @@
-#!/Users/meyghamachado/Library/Python/3.7/bin/
+#!/usr/local/bin/python
 from datetime import datetime, timedelta
 from pytz import timezone
 from bs4 import BeautifulSoup
@@ -15,7 +15,6 @@ NUM_LOOKBACK_YEARS = 10
 def count_dividend_payout(ticker_obj):
     count = 0
     cutoff_date = datetime.now(tz=timezone('America/New_York')) - timedelta(days=NUM_LOOKBACK_YEARS*365)
-    # cutoff_date = datetime(2014, 10, 1, tzinfo=timezone('America/New_York'))
     dividend_dates = [ t for t in ticker_obj.dividends.keys() ]
     count = [ d > cutoff_date for d in dividend_dates ].count(True)
     return str(count)
