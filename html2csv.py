@@ -7,8 +7,9 @@ import os
 import yfinance as yf
 from pathlib import Path
 
-input_data_dir = Path(os.getenv('HOME', '')) / 'Downloads'
-file_name = 'Magic_Formula_Stocks_2024_09_26'
+input_data_dir = Path('input')
+output_data_dir = Path('output')
+file_name = 'Magic_Formula_Stocks_2025_01_03'
 source_stocks = input_data_dir / f"{file_name}.html"
 NUM_LOOKBACK_YEARS = 10
 
@@ -28,7 +29,7 @@ table = soup.select_one("table.divheight")
 headers = [th.text.strip("\n") for th in table.select("tr th")]
 headers.append(f"Number of dividend payouts in the last {NUM_LOOKBACK_YEARS}")
 
-with open(f"{file_name}.csv", "w") as f:
+with open(output_data_dir / f"{file_name}.csv", "w") as f:
     wr = csv.writer(f)
     wr.writerow(headers)
     # breakpoint()
