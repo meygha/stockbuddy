@@ -13,6 +13,3 @@ Number of stocks: 30
 
 4. Upload to Google Drive with the apprentice account
 
-# TODOs
-
-- Turn html2csv.py into a CLI `html2csv` with an arg for input file
