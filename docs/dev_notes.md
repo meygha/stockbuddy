@@ -9,7 +9,7 @@ Number of stocks: 30
 
 To download, go to page and save as HTML
 
-2. Place the file in the root of this folder
+2. Place the file in input/ folder
 
 3. Run python -m html2csv to convert the html download to a csv file
 
