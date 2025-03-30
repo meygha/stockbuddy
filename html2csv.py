@@ -9,7 +9,7 @@ from pathlib import Path
 
 input_data_dir = Path('input')
 output_data_dir = Path('output')
-file_name = 'Magic_Formula_Stocks_2025_01_03'
+file_name = 'Magic_Formula_Stocks_2025_03_30'
 source_stocks = input_data_dir / f"{file_name}.html"
 NUM_LOOKBACK_YEARS = 10
 
