@@ -11,8 +11,6 @@ Number of stocks: 30
 
 Stockbuddy converts the html table into a csv with an added column for number of dividend payouts in the last 10 years
 
-![alt text](image.png)
-
 ### To use Stockbuddy
 1. Select stocks from the latest csv file in `output` into a Google sheet.
 2. Buy these stocks and setup reminders 1 year from now
