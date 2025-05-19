@@ -11,18 +11,17 @@ Number of stocks: 30
 
 Stockbuddy converts the html table into a csv with an added column for number of dividend payouts in the last 10 years
 
-This csv file is then imported into a Google Sheet template called Stockbuddy_Template.
-
 ![alt text](image.png)
 
-### To use the Stockbuddy Template
-1. Make a copy of the template
-2. Use the view of your choice to select stocks
-3. Make your selections by checking the box against the ticker.
-4. Use the column filter to view only your selections
-5. Buy these stocks and setup reminders 1 year from now
+### To use Stockbuddy
+1. Clone this repo
+2. Import the latest csv file into a Google sheet.
+3. Use the view of your choice to select stocks
+4. Make your selections by checking the box against the ticker.
+5. Use the column filter to view only your selections
+6. Buy these stocks and setup reminders 1 year from now
     - Taxable accounts: Setup a week long event from 2 days before the purchase date to 2 days after so that you can optimize for taxes
     - Tax-sheltered account: the distinction between short-term and long-term gains does not matter, a single reminder day is sufficient
 
-### Source List Update Schedule
-The SourceStocks are updated approx every 3 months
+### Update Schedule
+output is updated approx every 3 months
