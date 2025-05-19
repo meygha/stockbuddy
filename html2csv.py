@@ -32,10 +32,8 @@ headers.append(f"Number of dividend payouts in the last {NUM_LOOKBACK_YEARS}")
 with open(output_data_dir / f"{file_name}.csv", "w") as f:
     wr = csv.writer(f)
     wr.writerow(headers)
-    # breakpoint()
     for row in table.select("tr")[1:]:
         fields = []
-        # breakpoint()
         fields = [fd.text for fd in row.find_all("td")]
         ticker = yf.Ticker(fields[1])
         div_payout_cnt = count_dividend_payout(ticker)

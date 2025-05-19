@@ -14,8 +14,7 @@ Stockbuddy converts the html table into a csv with an added column for number of
 ![alt text](image.png)
 
 ### To use Stockbuddy
-1. Clone this repo
-2. Import the latest csv file into a Google sheet.
+1. Copy the latest csv file in `output` into a Google sheet.
 3. Use the view of your choice to select stocks
 4. Make your selections by checking the box against the ticker.
 5. Use the column filter to view only your selections
